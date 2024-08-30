@@ -1,0 +1,280 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #EFEFEF;
+    width: 100%;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------*/
+.navigation-bar{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+
+.nav-button{
+    margin-left: 20px;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.15;
+}
+.nav-button:hover{
+    opacity: 0.5;
+}
+
+.login-logo{
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+}
+.login-logo img{
+    width: 190px;
+}
+
+.nav-content {
+    display: none;
+    position: fixed;
+    top: 42px;
+    left: 0px;
+    background-color: #FFB13B;
+    height: 220px;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.nav-link a {
+    border-bottom: solid;
+    border-color: #f4a228;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px 10px 27px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: 0.15s;
+}
+.no-page:hover {
+    background-color: #f4a228;
+}
+.current-page{
+    background-color: #FFE177;
+}
+
+.show-nav{display: block;}
+
+/* -------------------------------------------------------------TOP VIEW-------------------------------------------------------------*/
+.top-view{
+    background-color: white;
+    height: 820px;
+}
+
+/* First Half */
+.first-half{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+}
+
+.welcome-text{
+    margin: 120px 0px 120px 135px;
+}
+
+.welcome-text h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.welcome-text p{
+    font-size: 24px;
+}
+
+.asset1{
+    width: 350px;
+    margin: 79px 0px 0px 135px;
+    z-index: 3;
+}
+
+/* Image Track */
+#image-track > .tenant{
+    width: 25vmin;
+    height: 35vmin;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 0% center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.tenant:hover{
+    filter: brightness(70%);
+}
+
+#image-track{
+    display: flex;
+    position: relative;
+    gap: 3vmin;
+    margin-left: 135px;
+    z-index: 2;
+}
+
+/* Design 1 */
+.design1{
+    width: 866px;
+    height: 500px;
+    position: relative;
+    right: 50px;
+    bottom: 330px;
+    background-color: #FFB13B;
+    border-radius: 30px;
+    box-shadow: 8px 15px 16px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------BOTTOM VIEW-------------------------------------------------------------*/
+.bottom-view{
+    background-color: white;
+    margin-top: 120px;
+    height: 500px;
+}
+
+/* Second Half */
+.second-half{
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-template-rows: 100%;
+}
+.what-text{
+    margin: 50px 0px 120px 135px;
+}
+
+.what-text h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.what-text p{
+    font-size: 24px;
+}
+
+.asset2{
+    width: 350px;
+    margin: 60px 0px 0px 80px;
+    z-index: 3;
+}
+
+/* Button Order */
+.orderNow-button{
+    position: relative;
+    bottom: 150px;
+    left: 135px;
+}
+
+.orderNow-button button{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #FFB13B;
+    border: solid;
+    padding: 20px 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.orderNow-button button:hover{
+    background-color: #f4a228;
+}
+.orderNow-button button:active{
+    opacity: 0.8;
+}
+
+/* Design 2 */
+.design2{
+    width: 866px;
+    height: 550px;
+    position: relative;
+    left: 780px;
+    bottom: 220px;
+    background-color: #FFB13B;
+    border-radius: 30px;
+    box-shadow: 8px 15px 16px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------FOOTER-------------------------------------------------------------*/
+.footer{
+    background-color: #474747;
+    margin-top: 280px;
+    position: relative;
+    height: 320px;
+    z-index: 4;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-logo{
+    width: 230px;
+    margin-top: 65px;
+}
+
+.footer-content h1{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.footer-link a, .footer-link span{
+    color: white;
+    font-size: 17px;
+    transition: 0.15s;
+}
+.footer-link a:hover{
+    opacity: 0.8;
+}
+.lms-link, .binusMaya-link, .admission-link{
+    margin: 0 25px;
+}
+
+.footer-content p{
+    margin-top: 80px;
+    color: white;
+    font-size: 13px;
+}
+
+/* -------------------------------------------------------------MEDIA-------------------------------------------------------------*/
+
+@media (min-height: 800px){
+    /* Top View */
+    .top-view{
+        height: 880px;
+    }
+    #image-track > .tenant{
+        width: 21vmin;
+        height: 30vmin;
+    }
+    #image-track{
+        margin-top: 50px;
+    }
+    .asset1{
+        width: 400px;
+    }
+    .design1{
+        height: 530px;
+        bottom: 360px;
+    }
+}

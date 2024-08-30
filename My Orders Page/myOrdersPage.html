@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="myOrdersPageStyles.css" />
+    <script src="myOrdersPageScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>BiKa</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navigation-bar">
+      <ion-icon
+        id="buttonNav"
+        class="nav-button"
+        onclick="navFunction()"
+        name="menu-outline"
+      ></ion-icon>
+      <a class="login-logo" href="../Home Page/homePage.html"
+        ><img src="../Images/BINUS KANTIN LOGO.png"
+      /></a>
+    </div>
+    <div id="navigation" class="nav-content">
+      <div class="nav-link">
+        <a class="no-page" href="../Home Page/homePage.html">Home</a>
+        <a class="no-page" href="../Profile Page/profilePage.html">Profile</a>
+        <a class="current-page">My Orders</a>
+        <a class="no-page" href="../About Page/aboutPage.html">About</a>
+        <a class="no-page" href="../Login Page/loginPage.html">Log Out</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <p>Your Orders</p>
+    </div>
+
+    <!-- First Half -->
+    <div class="first-half">
+      <h1>Currently active</h1>
+      <div class="current-active">
+        <div class="current-content">
+          <img src="Images/Kofeelogik.png" draggable="false" />
+          <div class="current-detail">
+            <h2>Kofeelogik</h2>
+            <p>1x Cappuccino</p>
+            <p>1x Vanilla Latte</p>
+            <p>1x Butter</p>
+            <h3>Rp74.000</h3>
+          </div>
+          <div class="status" id="preparing"><p>Preparing</p></div>
+        </div>
+        <div class="current-content">
+          <img src="Images/Kims Kitchen.png" draggable="false" />
+          <div class="current-detail">
+            <h2>Kims Kitchen</h2>
+            <p>1x Crispy Chicken Wings</p>
+            <p>1x Chicken Cheese Sandwich</p>
+            <p>2x Perfect Combo A</p>
+            <h3>Rp62.000</h3>
+          </div>
+          <div class="status" id="waiting"><p>Waiting</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Half -->
+    <div class="second-half">
+      <h1>This Month</h1>
+      <div class="scroll">
+        <div class="this-month">
+          <div class="thisMonth-content">
+            <img src="Images/Kofeelogik.png" draggable="false" />
+            <div class="thisMonth-detail">
+              <h2>Kofeelogik</h2>
+              <p>1x Cappuccino</p>
+              <p>1x Vanilla Latte</p>
+              <p>1x Butter</p>
+              <h3>Rp74.000</h3>
+            </div>
+            <div class="status" id="completed">
+              <p>Completed</p>
+              <h4>7/5/2023</h4>
+            </div>
+          </div>
+          <div class="thisMonth-content">
+            <img src="Images/Kims Kitchen.png" draggable="false" />
+            <div class="thisMonth-detail">
+              <h2>Kims Kitchen</h2>
+              <p>1x Crispy Chicken Wings</p>
+              <p>1x Chicken Cheese Sandwich</p>
+              <p>2x Perfect Combo A</p>
+              <h3>Rp62.000</h3>
+            </div>
+            <div class="status" id="completed">
+              <p>Completed</p>
+              <h4>7/5/2023</h4>
+            </div>
+          </div>
+          <div class="thisMonth-content">
+            <img src="Images/Kofeelogik.png" draggable="false" />
+            <div class="thisMonth-detail">
+              <h2>Kofeelogik</h2>
+              <p>1x Cappuccino</p>
+              <p>1x Vanilla Latte</p>
+              <p>1x Butter</p>
+              <h3>Rp74.000</h3>
+            </div>
+            <div class="status" id="completed">
+              <p>Completed</p>
+              <h4>7/5/2023</h4>
+            </div>
+          </div>
+          <div class="thisMonth-content">
+            <img src="Images/Kims Kitchen.png" draggable="false" />
+            <div class="thisMonth-detail">
+              <h2>Kims Kitchen</h2>
+              <p>1x Crispy Chicken Wings</p>
+              <p>1x Chicken Cheese Sandwich</p>
+              <p>2x Perfect Combo A</p>
+              <h3>Rp62.000</h3>
+            </div>
+            <div class="status" id="completed">
+              <p>Completed</p>
+              <h4>7/5/2023</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <img
+          class="footer-logo"
+          src="../Images/BIKA MAIN LOGO.png"
+          draggable="false"
+        />
+        <h1>Part of BINUS Maya Management System.</h1>
+        <div class="footer-link">
+          <a class="binusMaya-link" href="https://binusmaya.binus.ac.id"
+            >Binus Maya</a
+          >
+          <span>|</span>
+          <a class="lms-link" href="https://newbinusmaya.binus.ac.id/">LMS</a>
+          <span>|</span>
+          <a class="admission-link" href="https://binus.edu/admissions/"
+            >Admission</a
+          >
+        </div>
+        <p>Copyright © 2023 BINUS KANTIN. All Rights Reserved</p>
+      </div>
+    </div>
+    
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

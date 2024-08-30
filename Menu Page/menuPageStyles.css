@@ -1,0 +1,331 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #EFEFEF;
+    width: 100%;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* -------------------------------------------------------------Header-------------------------------------------------------------*/
+.header-img{
+    width: 100%;
+    height: 450px;
+    object-fit:cover;
+}
+
+.header-contain{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    height: 50px;
+    margin: 20px 0 0 60px;
+}
+
+.menu-tenant{
+    position: relative;
+    bottom: 100px;
+    left: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);;
+    background-color: #FFB13B;
+    color: white;
+    padding: 25px 0px 25px 50px;
+    border-radius: 18px;
+    height: 100px;
+}
+
+.menu-tenant h1{
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.menu-tenant p{
+    font-size: 17px;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------Menu Content-------------------------------------------------------------*/
+.menu-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    margin-top: 30px;
+}
+
+.menu-list{
+    background-color: white;
+    margin: 0 0 0 60px;
+    height: 950px;
+}
+
+.scroll-area{
+    padding-top: 25px;
+    padding-left: 30px;
+}
+.scroll{
+    overflow-y: scroll;
+    height: 900px;
+    direction:rtl;
+    padding-left: 25px;
+}
+.scroll div{
+    direction:ltr;
+}
+.scroll::-webkit-scrollbar{
+    position: relative;
+    width: 14px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #BFBFBF;
+    border-radius: 20px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: #DFDFDF;
+    border-radius: 20px;
+}
+
+.the-list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    padding: 0 50px 0 0;
+    grid-gap: 20px;
+}
+
+.list-content{
+    display: grid;
+    grid-template-columns: 180px 70% 20px;
+    grid-template-rows: 100%;
+    padding: 20px 0 20px 40px;
+    border-radius: 32px;
+}
+
+.list-img{
+    width: 180px;
+}
+
+.list-plus{
+    width: 30px;
+}
+
+.list-text{
+    padding-left: 40px;
+}
+.list-text h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.list-text h3{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 43px 0 0 0;
+}
+
+.list-text p{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------Checkout-------------------------------------------------------------*/
+.checkout{
+    margin-left: 20px;
+}
+
+.checkout-bar{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55px 500px auto;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.checkout-bar h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.checkout-detail{
+    border: solid;
+    margin-right: 20px;
+    border-left: 0;
+    border-right: 0;
+    border-color: #D9D9D9;
+}
+.grid-detail{
+    display: grid;
+    grid-template-columns: 50px 230px 100px;
+    grid-template-rows: 100%;
+}
+
+.grid-detail p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.subtotal{
+    display: grid;
+    grid-template-columns: 280px 100px;
+    grid-template-rows: 100%;
+    margin: 10px 0;
+}
+
+.subtotal p{
+    font-size: 16px;
+}
+
+.subtotal-price{
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------Checkout Button-------------------------------------------------------------*/
+.checkout-button{
+    margin-top: 15px;
+    width: 435px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #FFB13B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.15;
+}
+.checkout-button:hover{
+    background-color: #f4a228;
+}
+.checkout-button:active{
+    opacity: 0.8;
+}
+
+/* -------------------------------------------------------------Footer-------------------------------------------------------------*/
+.footer{
+    background-color: #474747;
+    margin-top: 200px;
+    height: 70px;
+}
+
+/* -------------------------------------------------------------QR-------------------------------------------------------------*/
+.qr{
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8; 
+    width: 400px;
+    height: 460px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#qr-block{
+    margin: 50px auto 10px auto;
+    display: block;
+    width: 250px;
+    cursor: pointer;
+}
+
+#qr-text{
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+}
+
+.qr-content p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Close Button */
+.close-button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.close-button:hover,
+.close-button:focus{
+    color: rgb(255, 49, 49);
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------Thank You Pop Up-------------------------------------------------------------*/
+.thank-you{
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8; 
+    width: 400px;
+    height: 460px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.thank-you img{
+    margin: 50px auto 10px auto;
+    display: block;
+    width: 250px;
+}
+
+.thank-you p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.thank-you button{
+    width: 250px;
+    display: block;
+    border-radius: 15px;
+    margin: 40px auto 10px auto;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #FFB13B;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.thank-you button:hover{
+    background-color: #f4a228;
+}
+.thank-you button:active{
+    opacity: 0.8;
+}
+
+/* Black Screen */
+#black-screen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+

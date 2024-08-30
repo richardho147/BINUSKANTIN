@@ -1,0 +1,210 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #EFEFEF;
+    width: 100%;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------*/
+.navigation-bar{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+
+.nav-button{
+    margin-left: 20px;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.15;
+}
+.nav-button:hover{
+    opacity: 0.5;
+}
+
+.login-logo{
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+}
+.login-logo img{
+    width: 190px;
+}
+
+.nav-content {
+    display: none;
+    position: fixed;
+    top: 42px;
+    left: 0px;
+    background-color: #FFB13B;
+    height: 220px;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.nav-link a {
+    border-bottom: solid;
+    border-color: #f4a228;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px 10px 27px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: 0.15s;
+}
+.no-page:hover {
+    background-color: #f4a228;
+}
+.current-page{
+    background-color: #FFE177;
+}
+
+.show-nav{display: block;}
+
+/* -------------------------------------------------------------Section 1-------------------------------------------------------------*/
+.section1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.about-us{
+    margin: 80px 0px 20px 120px;
+}
+
+.about-us h1{
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 30px;
+}
+
+.about-us p{
+    font-size: 20px;
+}
+
+.asset1{
+    padding-top: 120px;
+    padding-left: 30px;
+    width: 360px;
+}
+
+/* -------------------------------------------------------------Section 2-------------------------------------------------------------*/
+.section2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+
+.about-uss{
+    margin: 80px 0px 20px 20px;
+}
+
+.about-uss p{
+    font-size: 20px;
+}
+
+.asset2{
+    padding-top: 60px;
+    padding-left: 160px;
+    width: 360px;
+}
+
+/* -------------------------------------------------------------Section 3-------------------------------------------------------------*/
+.section3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.yel{
+    margin: 160px 0px 20px 120px;
+}
+
+.yel h1{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+
+.asset3{
+    padding-top: 120px;
+    width: 500px;
+}
+
+/* Button Order */
+
+.orderNow-button button{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #FFB13B;
+    border: solid;
+    padding: 20px 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.orderNow-button button:hover{
+    background-color: #f4a228;
+}
+.orderNow-button button:active{
+    opacity: 0.8;
+}
+
+/* -------------------------------------------------------------FOOTER-------------------------------------------------------------*/
+.footer{
+    background-color: #474747;
+    margin-top: 280px;
+    position: relative;
+    height: 320px;
+    z-index: 4;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-logo{
+    width: 230px;
+    margin-top: 65px;
+}
+
+.footer-content h1{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.footer-link a, .footer-link span{
+    color: white;
+    font-size: 17px;
+    transition: 0.15s;
+}
+.footer-link a:hover{
+    opacity: 0.8;
+}
+.lms-link, .binusMaya-link, .admission-link{
+    margin: 0 25px;
+}
+
+.footer-content p{
+    margin-top: 80px;
+    color: white;
+    font-size: 13px;
+}

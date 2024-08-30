@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homePageStyles.css" />
+    <script src="homePageScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>BiKa</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navigation-bar">
+      <ion-icon
+        id="buttonNav"
+        class="nav-button"
+        onclick="navFunction()"
+        name="menu-outline"
+      ></ion-icon>
+      <a class="login-logo" href="#"
+        ><img src="../Images/BINUS KANTIN LOGO.png"
+      /></a>
+    </div>
+    <div id="navigation" class="nav-content">
+      <div class="nav-link">
+        <a class="current-page">Home</a>
+        <a class="no-page" href="../Profile Page/profilePage.html">Profile</a>
+        <a class="no-page" href="../My Orders Page/myOrdersPage.html"
+          >My Orders</a
+        >
+        <a class="no-page" href="../About Page/aboutPage.html">About</a>
+        <a class="no-page" href="../Login Page/loginPage.html">Log Out</a>
+      </div>
+    </div>
+
+    <!-- Top View -->
+    <div class="top-view">
+      <div class="first-half">
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+          <h1>Welcome To BINUS KANTIN</h1>
+          <p>
+            Let’s start ordering your food in BINUS Kantin Now!<br />Faster and
+            easier!
+          </p>
+        </div>
+        <!-- Asset 1 -->
+        <img class="asset1" src="Images/Asset1.png" draggable="false" />
+      </div>
+
+      <!-- Image Track -->
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant1.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant2.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant3.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant4.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant5.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant6.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant7.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant8.png"
+          draggable="false"
+        />
+        <img
+          class="tenant"
+          onclick="document.location='../Menu Page/menuPage.html'"
+          src="Images/FotoKantin/tenant9.png"
+          draggable="false"
+        />
+      </div>
+
+      <!-- Design 1 -->
+      <div class="design1"></div>
+    </div>
+
+    <!-- Bottom View -->
+    <div class="bottom-view">
+      <div class="second-half">
+        <!-- What Is Text -->
+        <div class="what-text">
+          <h1>What is BINUS KANTIN?</h1>
+          <p>
+            Binus Kantin is a website that aims to help Binusian Students order
+            food easier<br />with online menu display. Giving students easier
+            time and better experience<br />when choosing their meal.
+          </p>
+        </div>
+        <!-- Asset 2 -->
+        <img class="asset2" src="Images/Asset2.png" draggable="false" />
+      </div>
+
+      <!-- Second Half Button -->
+      <a class="orderNow-button" href="#"><button>Order Now!</button></a>
+
+      <!-- Design 2 -->
+      <div class="design2"></div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <img
+          class="footer-logo"
+          src="../Images/BIKA MAIN LOGO.png"
+          draggable="false"
+        />
+        <h1>Part of BINUS Maya Management System.</h1>
+        <div class="footer-link">
+          <a class="binusMaya-link" href="https://binusmaya.binus.ac.id"
+            >Binus Maya</a
+          >
+          <span>|</span>
+          <a class="lms-link" href="https://newbinusmaya.binus.ac.id/">LMS</a>
+          <span>|</span>
+          <a class="admission-link" href="https://binus.edu/admissions/"
+            >Admission</a
+          >
+        </div>
+        <p>Copyright © 2023 BINUS KANTIN. All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+
+  <!-- Image Track -->
+  <script>
+    const track = document.getElementById("image-track");
+
+    window.onmousedown = (e) => {
+      track.dataset.mouseDownAt = e.clientX;
+    };
+
+    window.onmouseup = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    };
+    window.onmousemove = (e) => {
+      if (track.dataset.mouseDownAt === "0") return;
+
+      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+      const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
+
+      track.dataset.percentage = nextPercentage;
+      if (nextPercentage >= 0) nextPercentage = 0;
+      else if (nextPercentage <= -35) nextPercentage = -35;
+      track.animate(
+        {
+          transform: `translate(${nextPercentage}%, -0%)`,
+        },
+        { duration: 800, fill: "forwards" }
+      );
+    };
+  </script>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

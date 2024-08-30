@@ -1,0 +1,136 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom right,rgba(255, 225, 119, 1),rgb(210, 129, 7));
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    margin: 0;
+    font-family: Inter, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 55px;
+}
+.login-logo{
+    width: 259px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    background-color: none;
+}
+
+.check{
+    display: block;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: black;
+    accent-color: black;
+}
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+.modal{
+    position: fixed; 
+    z-index: 1; 
+    width: 400px;
+    height: 400px;
+    padding: none;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+}
+.login-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid black;
+    margin: 30px 0;
+}
+.login-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.login-box input:focus:required~label,.login-box input:valid~label{
+    top: -5px;
+}
+
+.login-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+}
+.login-box .login-icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.login-button{
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    border-radius: 19px;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.login-button:hover {
+    background-color: black;
+    color: white;
+}
+.login-button:active{
+    opacity: 0.7;
+}
+

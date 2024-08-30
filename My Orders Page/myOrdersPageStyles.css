@@ -1,0 +1,284 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #EFEFEF;
+    width: 100%;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------*/
+.navigation-bar{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+
+.nav-button{
+    margin-left: 20px;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.15;
+}
+.nav-button:hover{
+    opacity: 0.5;
+}
+
+.login-logo{
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+}
+.login-logo img{
+    width: 190px;
+}
+
+.nav-content {
+    display: none;
+    position: fixed;
+    top: 42px;
+    left: 0px;
+    background-color: #FFB13B;
+    height: 220px;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.nav-link a {
+    border-bottom: solid;
+    border-color: #f4a228;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px 10px 27px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: 0.15s;
+}
+.no-page:hover {
+    background-color: #f4a228;
+}
+.current-page{
+    background-color: #FFE177;
+}
+
+.show-nav{display: block;}
+
+/* -------------------------------------------------------------Header-------------------------------------------------------------*/
+.header{
+    background-color: #FFB13B;
+    height: 100px;
+    margin: 0 120px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    /* justify-content: center; */
+}
+.header p{
+    font-weight: 800;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+/* -------------------------------------------------------------First Half-------------------------------------------------------------*/
+.first-half{
+    margin: 90px 120px 0 120px;
+}
+
+.first-half h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.current-active{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 160px;
+    grid-gap: 20px;
+}
+
+.current-content{
+    display: grid;
+    grid-template-columns: 160px 77% auto;
+    grid-template-rows: 100%;
+    background-color: white;
+    padding: 20px 25px 20px 25px;
+    border-radius: 32px;
+}
+
+.current-content img{
+    width: 120px;
+}
+
+.current-detail h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.current-detail h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 11px 0 0 0;
+    color: #FFB13B;
+}
+
+.current-detail p{
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Status */
+.status p{
+    margin: 0;
+    font-weight: 600;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+}
+#preparing p{
+    background-color: #FFDC5F;
+}
+#waiting p{
+    background-color: #F69A0F;
+}
+
+/* -------------------------------------------------------------Second Half-------------------------------------------------------------*/
+.second-half{
+    margin: 90px 120px 0 120px;
+}
+
+.second-half h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.scroll{
+    overflow-y: scroll;
+    height: 520px;
+    direction:rtl;
+    padding-left: 25px;
+}
+.scroll div{
+    direction:ltr;
+}
+.scroll::-webkit-scrollbar{
+    position: relative;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #BFBFBF;
+    border-radius: 20px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: #DFDFDF;
+    border-radius: 20px;
+}
+
+.this-month{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 160px 160px 160px;
+    grid-gap: 20px;
+}
+
+.thisMonth-content{
+    display: grid;
+    grid-template-columns: 160px 77% auto;
+    grid-template-rows: 100%;
+    background-color: white;
+    padding: 20px 25px 20px 25px;
+    border-radius: 32px;
+}
+
+.thisMonth-content img{
+    width: 120px;
+}
+
+.thisMonth-detail h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.thisMonth-detail h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 11px 0 0 0;
+    color: #FFB13B;
+}
+
+.thisMonth-detail p{
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Status */
+.status h4{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 6px 0 0 0;
+    color: #747474;
+    text-align: right;
+}
+#completed p{
+    background-color: #6AD274;
+}
+
+/* -------------------------------------------------------------FOOTER-------------------------------------------------------------*/
+.footer{
+    background-color: #474747;
+    margin-top: 200px;
+    position: relative;
+    height: 320px;
+    z-index: 4;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-logo{
+    width: 230px;
+    margin-top: 65px;
+}
+
+.footer-content h1{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.footer-link a, .footer-link span{
+    color: white;
+    font-size: 17px;
+    transition: 0.15s;
+}
+.footer-link a:hover{
+    opacity: 0.8;
+}
+.lms-link, .binusMaya-link, .admission-link{
+    margin: 0 25px;
+}
+
+.footer-content p{
+    margin-top: 80px;
+    color: white;
+    font-size: 13px;
+}
